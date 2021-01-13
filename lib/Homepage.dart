@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:photography_app/widgets/widgets.dart';
 import 'helper/colorsys.dart';
+import 'package:photography_app/data/Sample.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -87,8 +88,9 @@ class _HomePageState extends State<HomePage> {
                       ],
                     ),
                   ),
-                  SizedBox(width: 20),
-                  makePost(),
+                  SizedBox(height: 20),
+                  makePost(Sample.postOne,context),
+                  makePost(Sample.postTwo,context),
                 ],
               ),
             ),

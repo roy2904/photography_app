@@ -2,11 +2,11 @@ import 'package:photography_app/models/User.dart';
 
 
 class Post{
-  final User users;
+  final User user;
   final String location;
   final String dateAgo;
-  final List<String> photo;
-  final List<String> relatedphoto;
+  final List<String> photos;
+  final List<String> relatedPhotos;
 
-  Post(this.users, this.location, this.dateAgo, this.photo, this.relatedphoto);
+  Post({this.user, this.location, this.dateAgo, this.photos, this.relatedPhotos});
 }
